@@ -1,0 +1,27 @@
+# dbt_project.yml
+name: dbt_sandbox
+version: "1.0"
+config-version: 2
+
+profile: default
+
+# Define model directories
+model-paths:
+  - models
+
+# Target configurations (placeholders for Snowflake)
+vars:
+  "snowflake": {}
+
+# Define schemas and materializations for each layer
+models:
+  dbt_sandbox:
+    base:
+      +materialized: table
+      +schema: BASE
+    intermediate:
+      +materialized: table
+      +schema: INTERMEDIATE
+    marts:
+      +materialized: view
+      +schema: MARTS

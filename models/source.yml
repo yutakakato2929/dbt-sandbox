@@ -1,0 +1,115 @@
+version: 2
+sources:
+  - name: raw
+    schema: RAW
+    tables:
+      - name: raw_1
+        description: "Raw source table 1"
+        config:
+          loaded_at_field: loaded_at
+          freshness:
+            warn_after:
+              count: 24
+              period: hour
+            error_after:
+              count: 48
+              period: hour
+      - name: raw_2
+        description: "Raw source table 2"
+        config:
+          loaded_at_field: loaded_at
+          freshness:
+            warn_after:
+              count: 24
+              period: hour
+            error_after:
+              count: 48
+              period: hour
+      - name: raw_3
+        description: "Raw source table 3"
+        config:
+          loaded_at_field: loaded_at
+          freshness:
+            warn_after:
+              count: 24
+              period: hour
+            error_after:
+              count: 48
+              period: hour
+      - name: raw_4
+        description: "Raw source table 4"
+        config:
+          loaded_at_field: loaded_at
+          freshness:
+            warn_after:
+              count: 24
+              period: hour
+            error_after:
+              count: 48
+              period: hour
+      - name: raw_5
+        description: "Raw source table 5"
+        config:
+          loaded_at_field: loaded_at
+          freshness:
+            warn_after:
+              count: 24
+              period: hour
+            error_after:
+              count: 48
+              period: hour
+      - name: raw_6
+        description: "Raw source table 6"
+        config:
+          loaded_at_field: loaded_at
+          freshness:
+            warn_after:
+              count: 24
+              period: hour
+            error_after:
+              count: 48
+              period: hour
+      - name: raw_7
+        description: "Raw source table 7"
+        config:
+          loaded_at_field: loaded_at
+          freshness:
+            warn_after:
+              count: 24
+              period: hour
+            error_after:
+              count: 48
+              period: hour
+      - name: raw_8
+        description: "Raw source table 8"
+        config:
+          loaded_at_field: loaded_at
+          freshness:
+            warn_after:
+              count: 24
+              period: hour
+            error_after:
+              count: 48
+              period: hour
+      - name: raw_9
+        description: "Raw source table 9"
+        config:
+          loaded_at_field: loaded_at
+          freshness:
+            warn_after:
+              count: 24
+              period: hour
+            error_after:
+              count: 48
+              period: hour
+      - name: raw_10
+        description: "Raw source table 10"
+        config:
+          loaded_at_field: loaded_at
+          freshness:
+            warn_after:
+              count: 24
+              period: hour
+            error_after:
+              count: 48
+              period: hour
