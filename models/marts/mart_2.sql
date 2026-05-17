@@ -1,8 +1,11 @@
 {{ config(materialized='view', tags=['mart_2']) }}
+
 SELECT
-  b3.id,
-  i2.cnt,
-  i2.first_seen,
-  i2.last_seen
-FROM {{ ref('base_3') }} AS b3
-LEFT JOIN {{ ref('int_2') }} AS i2 ON b3.category = i2.category
+    i34.id,
+    i34.value_3,
+    i34.value_4,
+    i56.value_5,
+    i56.value_6,
+    i34.loaded_at
+FROM {{ ref('int_3_4') }} AS i34
+JOIN {{ ref('int_5_6') }} AS i56 ON i34.id = i56.id
